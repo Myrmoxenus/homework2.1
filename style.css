@@ -5,6 +5,7 @@ body {
 p { 
     color: #FFFBE4;
 }
+
 h1 {
     color: #894F19;
     font-size: 20px;
@@ -15,9 +16,17 @@ h1 {
 
 h2 {
     color: #894F19;
-    font-size: 25px;
+    font-size: 24px;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
+}
+
+h3 {
+    color: #894F19;
+    font-size: 1.2vw;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    margin: 10px
 }
 
 .btn{
@@ -53,25 +62,59 @@ h2 {
     transform: translatex(-50%);
 }
 
-.blankportfoliolink{
+.portfolioImage{
+    
+    margin: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+    border: 1px solid #894F19;
+
+}
+
+
+.portfolioCard{
     width: 30%;
     height: auto;
     margin: 1%;
+    border-radius: 5px;
+    background-color: #FFFBE4;
+    color: #894F19;
+    text-align: center;
+    float:left;
+    min-height: 356px;
+    position: relative;
+}
 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: #8FACA2;
+    color: #FFFBE4;
+    border-radius: 0px;
+}
+
+.portfolioBtn {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.8vw;
 }
 
 /* Media Queries */
 @media screen and (max-width: 900px)
 {
-.blankportfoliolink{
+.portfolioCard{
     width: 45%;
+    min-height: 200px;
    }
 }
 @media screen and (max-width: 500px)
 {
-.blankportfoliolink{
+.portfolioCard{
     width: 87%;
-margin-left: auto;
-margin-right: auto;
+    min-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 4px;
 }
 }
